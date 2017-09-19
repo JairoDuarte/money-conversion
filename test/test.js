@@ -1,6 +1,5 @@
 var assert = require('assert');
-var exemplo = require('../lib/index');
-var app = require('../app')
+var app = require('../lib/index');
 
 describe("curreny", function() {
 	describe("request", function() {
@@ -12,7 +11,10 @@ describe("curreny", function() {
             
         });
         it('help', function() {
-              assert.equal('Hello World', app().help());
+            app().help(function(res){
+              assert.equal(200, res);
+              
+            });
         });
 	});
 });
