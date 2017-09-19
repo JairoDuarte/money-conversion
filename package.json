@@ -17,8 +17,11 @@
   "devDependencies": {
     "mocha": "^3.5.3",
     "mockery": "^2.1.0",
+    "sinon": "^3.3.0"
+  },
+  "dependencies": {
     "nodejs-scanf": "1.1.0",
     "currency-conversion": "0.2.4",
-    "sinon": "^3.3.0"
+    "colors": "^1.1.2"
   }
 }
