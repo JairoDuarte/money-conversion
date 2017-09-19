@@ -10,10 +10,9 @@ describe("curreny", function() {
             assert.equal(12, app().conversion(10,1.2));
             
         });
-        it('help', function() {
-            app().help(function(res){
-              assert.equal(200, res);
-              
+        it('result', function() {
+            app().result('EUR','USD',10,function(params) {
+                assert.equal(8,params);  
             });
         });
 	});
