@@ -8,11 +8,13 @@ describe("curreny", function() {
         });
         it('conversion', function() {
             assert.equal(12, app().conversion(10,1.2));
+            console.log('hell');
             
         });
         it('result', function() {
-            app().result('EUR','USD',10,function(params) {
-                assert.equal(8,params);  
+            app().result('EUR','USD',10,function(params1,params) {
+                
+                assert.equal('12.5 USD',params1);  
             });
         });
 	});

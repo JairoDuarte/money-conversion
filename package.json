@@ -4,7 +4,7 @@
   "description": "App for currency conversion in the terminal",
   "main": "app.js",
   "scripts": {
-    "test": "app.js"
+    "test": "test.js"
   },
   "keywords": [
     "currency",
@@ -17,6 +17,8 @@
   "devDependencies": {
     "mocha": "^3.5.3",
     "mockery": "^2.1.0",
+    "nodejs-scanf": "1.1.0",
+    "currency-conversion": "0.2.4",
     "sinon": "^3.3.0"
   }
 }
