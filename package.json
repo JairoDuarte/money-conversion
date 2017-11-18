@@ -8,7 +8,8 @@
 	},
 	"preferGlobal": "true",
   "scripts": {
-    "test": "test.js"
+    "test": "test.js",
+    "dev":"app.js"
   },
   "keywords": [
     "currency",
@@ -27,5 +28,9 @@
     "nodejs-scanf": "1.1.0",
     "currency-conversion": "0.2.4",
     "colors": "^1.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JairoDuarte/CurrencyConversion.git"
   }
 }
