@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 let {scanf} = require('nodejs-scanf');
 let app = require('./lib/index');
 let colors = require('colors/safe');
