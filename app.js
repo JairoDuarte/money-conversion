@@ -1,6 +1,7 @@
-let {scanf} = require('nodejs-scanf');
-let app = require('./lib/index');
-let colors = require('colors/safe');
+#!/usr/bin/env node
+const app = require('./lib/index'),
+colors = require('colors/safe'),
+{scanf} = require('nodejs-scanf');
 
 console.log(colors.green('Please input value in format: from to money'));
 console.log(colors.italic.red('Ex: USD EUR 100'));

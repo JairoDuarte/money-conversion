@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "App for currency conversion in the terminal",
   "main": "app.js",
+  "bin": {
+		"CurrencyConversion": "app.js"
+	},
+	"preferGlobal": "true",
   "scripts": {
     "test": "test.js"
   },
