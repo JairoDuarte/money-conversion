@@ -4,7 +4,10 @@
   "description": "App for currency conversion in the terminal",
   "main": "app.js",
   "scripts": {
-    "test": "test.js"
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "eslint '**/*.js' --fix",
+    "test": "node test/test.js",
+    "test:interface": "node test/interface.js"
   },
   "keywords": [
     "currency",

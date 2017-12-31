@@ -1,5 +1,5 @@
 var assert = require('assert');
-var app = require('../lib/index');
+var app = require('../src/index');
 
 describe("curreny", function() {
 	describe("request", function() {
