@@ -1,12 +1,12 @@
 {
-  "name": "currencyconversion",
-  "version": "1.0.0",
-  "description": "App for currency conversion in the terminal",
+  "name": "conversor-moedas",
+  "version": "1.0.2",
+  "description": "Conversor de moedas para terminal(shell) com nodejs",
   "main": "app.js",
   "bin": {
-		"CurrencyConversion": "app.js"
+		"conversor-moedas": "app.js"
 	},
-	"preferGlobal": "true",
+	"preferGlobal": true,
   "scripts": {
     "start": "node app.js",
     "test": "node test/test.js",
@@ -18,7 +18,7 @@
     "conversão",
     "divisas"
   ],
-  "author": "Jairo Duarte",
+  "author": "Jairo Duarte <alfredojairo17@hotmail.com> (https://jairoduarte.github.io/resume/index.html) ",
   "license": "MIT",
   "devDependencies": {
     "mocha": "^3.5.3",
