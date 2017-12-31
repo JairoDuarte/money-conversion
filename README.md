@@ -10,9 +10,6 @@ Antes de usar o conversor de moedas você precisa obter uma chave de autentifica
 
 ## Utilização
 
-The general API is documented here: [https://currencylayer.com/documentation](https://currencylayer.com/documentation).  
-You can find parameters, result set definitions and status codes documented here as well.
-
 
 ### Setup
 
