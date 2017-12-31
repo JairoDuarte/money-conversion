@@ -1,4 +1,6 @@
-# Conversor de Moedas [![npm version](https://badge.fury.io/js/conversor-moedas.svg)] (https://badge.fury.io/js/conversor-moedas)
+# Conversor de Moedas [![npm version](https://badge.fury.io/js/conversor-moedas.svg)](https://badge.fury.io/js/conversor-moedas)
+
+# JSON Server  [![npm version](https://badge.fury.io/js/conversor-moedas.svg)](https://badge.fury.io/js/conversor-moedas)
 
 
 ## Instalação
