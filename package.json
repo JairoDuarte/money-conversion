@@ -1,8 +1,12 @@
 {
-  "name": "currencyconversion",
-  "version": "1.0.0",
-  "description": "App for currency conversion in the terminal",
-  "main": "app.js",
+  "name": "conversor-moedas",
+  "version": "1.1.1",
+  "description": "Conversor de moedas para terminal(shell) com nodejs",
+  "main": "src/app.js",
+  "bin": {
+		"conversor-moedas": "src/app.js"
+	},
+	"preferGlobal": true,
   "scripts": {
     "lint": "eslint '**/*.js'",
     "lint:fix": "eslint '**/*.js' --fix",
@@ -15,7 +19,7 @@
     "conversão",
     "divisas"
   ],
-  "author": "Jairo Duarte",
+  "author": "Jairo Duarte <alfredojairo17@hotmail.com> (https://jairoduarte.github.io/resume/index.html) ",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^4.14.0",
@@ -31,5 +35,9 @@
     "nodejs-scanf": "1.1.0",
     "currency-conversion": "0.2.4",
     "colors": "^1.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JairoDuarte/CurrencyConversion.git"
   }
 }
