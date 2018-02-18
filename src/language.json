@@ -1,9 +1,13 @@
 {
     "Pt": {
-        "name":"Portugues",
-        "equal":" = ",
-        "Help": "Ajuda"
+        "name":" Portugues ",
+        "Help": " Ajuda ",
+        "choice1":" Escolha uma opção no menu: ",
+        "close":" Sair ",
+        "Convert":" Converter "
     },
     "Fr": {},
-    "Eng":{}
+    "Eng":{},
+    "Language":"",
+    "config":false
 }

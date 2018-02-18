@@ -28,9 +28,12 @@ function result(from, to, value, collback) {
       Console.log(err);
       Console.log(`Live (Error): ${JSON.stringify(err)}`);
     } else {
-      const string = JSON.stringify(result.quotes);
-      const quotes = JSON.parse(string);
-
+      
+     // const string = JSON.stringify(result.quotes);
+      // conversão para JS 
+     
+      const quotes = result.quotes;  //JSON.parse(string);
+      console.log(quotes);
       const $from = quotes[`USD${from}`];
       const $to = quotes[`USD${to}`];
 
