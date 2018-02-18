@@ -8,6 +8,7 @@
 	},
 	"preferGlobal": true,
   "scripts": {
+    "start": "nodemon ./src/app.js",
     "lint": "eslint '**/*.js'",
     "lint:fix": "eslint '**/*.js' --fix",
     "test": "node test/test.js",

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const { scanf } = require('nodejs-scanf');
-const app = require('./index');
+const {app} = require('./index');
 const colors = require('colors/safe');
 
 const Console = console;
@@ -16,8 +16,8 @@ const print = function print(params, params1) {
 
 scanf('%s %s %f', (from, to, value) => {
   if (from.toUpperCase() === ':HELP') {
-    app().help();
+    app.help();
   } else {
-    app().result(from, to, value, print);
+    app.result(from.toUpperCase(), to.toUpperCase(), value, print);
   }
 });
