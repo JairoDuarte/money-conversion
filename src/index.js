@@ -15,7 +15,7 @@ async function help() {
 
   } catch (error) {
     Console.log(err);
-        Console.log(`Live (Error): ${JSON.stringify(err)}`);
+    Console.log(`Live (Error): ${JSON.stringify(err)}`);
   }
 }
 // multiplica a valor dado pelo valor do cambio 
