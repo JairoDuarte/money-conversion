@@ -15,7 +15,6 @@ const print = function print(params, params1) {
 };
 
 scanf('%s %s %d', (from, to, value) => {
-  console.log(value);
   if (from.toUpperCase() === ':HELP') {
     app.help();
   } else {

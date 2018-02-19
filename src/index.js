@@ -6,17 +6,17 @@ const api = new API({ access_key: ['1d36e5db73566dda4cf57cb2af474e19']});
 const Console = console;
 const liveQuery = { source: 'USD',currencies: []};
 
-function help() {
-  api.list(liveQuery, (err, result) => {
-    if (err) {
-        Console.log(err);
+async function help() {
+  try {
+    var result = await api.list(liveQuery); 
+    Console.log();
+    Console.log('Currencies: ');
+    Console.log(result.currencies);
+
+  } catch (error) {
+    Console.log(err);
         Console.log(`Live (Error): ${JSON.stringify(err)}`);
-    } else {
-        Console.log();
-        Console.log('Currencies: ');
-        Console.log(result.currencies);
-    }
-  });
+  }
 }
 // multiplica a valor dado pelo valor do cambio 
 const conversion = (value, rate)=>{
