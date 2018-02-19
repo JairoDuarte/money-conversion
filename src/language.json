@@ -1,13 +1,19 @@
 {
     "Pt": {
-        "name":" Portugues ",
+        "name": " Português ",
         "Help": " Ajuda ",
-        "choice1":" Escolha uma opção no menu: ",
-        "close":" Sair ",
-        "Convert":" Converter "
+        "choice1": " Escolha uma opção no menu: ",
+        "close": " Sair ",
+        "Convert": " Converter "
     },
     "Fr": {},
-    "Eng":{},
-    "Language":"",
-    "config":false
+    "Eng": {
+        "name": " English ",
+        "Help": " Ajuda ",
+        "choice1": " Escolha uma opção no menu: ",
+        "close": " Sair ",
+        "Convert": " Converter "
+    },
+    "Language": "Pt",
+    "config": false
 }
