@@ -22,24 +22,18 @@ function help() {
 const conversion = (value, rate)=>{
   return value * rate;
 }
-function result(from, to, value, collback) {
-  api.live(liveQuery, (err, result) => {
-    if (err) {
-      Console.log(err);
-      Console.log(`Live (Error): ${JSON.stringify(err)}`);
-    } else {
-      
-     // const string = JSON.stringify(result.quotes);
-      // conversão para JS 
-     
-      const quotes = result.quotes;  //JSON.parse(string);
-      console.log(quotes);
+async function result(from, to, value, collback) {
+  try {
+      var result = await api.live(liveQuery); 
+      const quotes = result.quotes;
       const $from = quotes[`USD${from}`];
       const $to = quotes[`USD${to}`];
-
       collback(`${value} ${from}`, from.toUpperCase() === 'USD' ? `${conversion(value, $to)} ${to}` : `${conversion(value, $to / $from)} ${to}`);
-    }
-  });
+  
+  } catch (error) {
+    Console.log(error);
+    Console.log(`Live (Error): ${JSON.stringify(err)}`);
+  }
 }
 
 module.exports.app = {result,help}

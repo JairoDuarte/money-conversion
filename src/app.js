@@ -14,7 +14,8 @@ const print = function print(params, params1) {
   Console.log(colors.blue(' %s') + colors.magenta(' is  %s'), params, params1);
 };
 
-scanf('%s %s %f', (from, to, value) => {
+scanf('%s %s %d', (from, to, value) => {
+  console.log(value);
   if (from.toUpperCase() === ':HELP') {
     app.help();
   } else {

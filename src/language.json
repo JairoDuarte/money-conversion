@@ -1,18 +1,20 @@
 {
     "Pt": {
-        "name": " Português ",
-        "Help": " Ajuda ",
-        "choice1": " Escolha uma opção no menu: ",
-        "close": " Sair ",
+        "name": "Português ",
+        "Help": "Ajuda ",
+        "choice1": "Escolha uma opção no menu: ",
+        "close": "Sair ",
+        "is": "é ",
         "Convert": " Converter "
     },
     "Fr": {},
     "Eng": {
-        "name": " English ",
-        "Help": " Ajuda ",
-        "choice1": " Escolha uma opção no menu: ",
-        "close": " Sair ",
-        "Convert": " Converter "
+        "name": "English ",
+        "Help": "Help ",
+        "choice1": "Escolha uma opção no menu: ",
+        "close": "Sair ",
+        "is": "is ",
+        "Convert": "Converter "
     },
     "Language": "Pt",
     "config": false
