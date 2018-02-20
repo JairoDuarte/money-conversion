@@ -3,13 +3,19 @@ var content = require('./language.json');
 
 function changelanguage (language = 'Eng') {
   content.Language = language;
-  const output = JSON.stringify(output);
-  fs.writeFile("./language.json", output, 'utf8',(err) => { if (err) return console.log(err);});
+  const output = JSON.stringify(content);
+  console.log(output);
+  fs.writeFile("./src/language.json", output, 'utf8',function (err) { if (err) return console.log(err); console.log('Ok'); });
+}
+
+function getconfig() {
+  return content.config;
 }
 
 function conflanguage(language) {
+  console.log('conf');
   content.config = true;
-  changelangue(language);
+  changelanguage(language);
 }
 
 function getlanguage() {
@@ -22,4 +28,10 @@ function getlanguage() {
   else
     return content.Fr;
 }
-module.exports.language = {chageLangue, conflanguage, getlanguage}
+function init(colors) {
+  console.log(colors.green('Please choice an language:'));
+  console.log(colors.italic.red('1 - English '));
+  console.log(colors.italic.red('2 - French '));
+  console.log(colors.italic.red('3 - Porguese '));
+}
+module.exports.language = {changelanguage, conflanguage, getlanguage, init, getconfig}

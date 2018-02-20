@@ -1,21 +1,23 @@
 {
     "Pt": {
         "name": "Português ",
-        "Help": "Ajuda ",
-        "choice1": "Escolha uma opção no menu: ",
-        "close": "Sair ",
+        "choice2": "Ajuda ",
+        "form1": "Escolha uma opção no menu: ",
+        "form2": "Por favor ensira o valor no formato: Origem Destinação Valor => (USD EUR 1)",
+        "choice3": "Sair ",
         "is": "é ",
-        "Convert": " Converter "
+        "choice1": " Converter "
     },
     "Fr": {},
     "Eng": {
         "name": "English ",
         "Help": "Help ",
-        "choice1": "Escolha uma opção no menu: ",
+        "form2":"Please input value in format: From To Money => (USD EUR 1)",
+        "form1": "Escolha uma opção no menu: ",
         "close": "Sair ",
         "is": "is ",
-        "Convert": "Converter "
+        "choice1": "Converter "
     },
     "Language": "Pt",
-    "config": false
+    "config": true
 }
