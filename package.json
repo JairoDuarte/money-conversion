@@ -4,9 +4,9 @@
   "description": "Conversor de moedas para terminal(shell) com nodejs",
   "main": "src/app.js",
   "bin": {
-		"conversor-moedas": "src/app.js"
-	},
-	"preferGlobal": true,
+    "conversor-moedas": "src/app.js"
+  },
+  "preferGlobal": true,
   "scripts": {
     "start": "nodemon ./src/app.js",
     "lint": "eslint '**/*.js'",
@@ -33,9 +33,10 @@
     "sinon": "^3.3.0"
   },
   "dependencies": {
-    "nodejs-scanf": "1.1.0",
+    "colors": "^1.1.2",
     "currency-conversion": "0.2.4",
-    "colors": "^1.1.2"
+    "nodejs-scanf": "1.1.0",
+    "scanf": "^1.0.0"
   },
   "repository": {
     "type": "git",

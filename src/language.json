@@ -2,7 +2,7 @@
     "Pt": {
         "name": "Português ",
         "choice2": "Ajuda ",
-        "form1": "Escolha uma opção no menu: ",
+        "form1": "************* Escolha uma opção no menu ******************",
         "form2": "Por favor ensira o valor no formato: Origem Destinação Valor => (USD EUR 1)",
         "choice3": "Sair ",
         "is": "é ",
