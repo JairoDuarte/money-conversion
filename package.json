@@ -1,16 +1,19 @@
 {
   "name": "conversor-moedas",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Conversor de moedas para terminal(shell) com nodejs",
-  "main": "app.js",
+  "main": "src/app.js",
   "bin": {
-		"conversor-moedas": "app.js"
-	},
-	"preferGlobal": true,
+    "conversor-moedas": "src/app.js"
+  },
+  "preferGlobal": true,
   "scripts": {
-    "start": "node app.js",
+    "send": "npm publish --access=public",
+    "start": "nodemon ./src/app.js",
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "eslint '**/*.js' --fix",
     "test": "node test/test.js",
-    "dev":"app.js"
+    "test:interface": "node test/interface.js"
   },
   "keywords": [
     "currency",
@@ -21,14 +24,20 @@
   "author": "Jairo Duarte <alfredojairo17@hotmail.com> (https://jairoduarte.github.io/resume/index.html) ",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
     "mocha": "^3.5.3",
     "mockery": "^2.1.0",
     "sinon": "^3.3.0"
   },
   "dependencies": {
-    "nodejs-scanf": "1.1.0",
+    "colors": "^1.1.2",
     "currency-conversion": "0.2.4",
-    "colors": "^1.1.2"
+    "nodejs-scanf": "1.1.0",
+    "scanf": "^1.0.0"
   },
   "repository": {
     "type": "git",

@@ -1,21 +1,21 @@
-var assert = require('assert');
-var app = require('../lib/index');
+const assert = require('assert');
+const app = require('../src/index');
 
-describe("curreny", function() {
-	describe("request", function() {
-		it(' true', function() {
-			assert.equal(true, true);
-        });
-        it('conversion', function() {
-            assert.equal(12, app().conversion(10,1.2));
-            console.log('hell');
-            
-        });
-        it('result', function() {
-            app().result('EUR','USD',10,function(params1,params) {
-                
-                assert.equal('12.5 USD',params1);  
-            });
-        });
-	});
+const Console = console;
+
+describe('curreny', () => {
+  describe('request', () => {
+    it(' true', () => {
+      assert.equal(true, true);
+    });
+    it('conversion', () => {
+      assert.equal(12, app().conversion(10, 1.2));
+      Console.log('hell');
+    });
+    it('result', () => {
+      app().result('EUR', 'USD', 10, (params1, params) => {
+        assert.equal('12.5 USD', params1 + params);
+      });
+    });
+  });
 });
