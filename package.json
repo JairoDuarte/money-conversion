@@ -8,6 +8,7 @@
   },
   "preferGlobal": true,
   "scripts": {
+    "send": "npm publish --access=public",
     "start": "nodemon ./src/app.js",
     "lint": "eslint '**/*.js'",
     "lint:fix": "eslint '**/*.js' --fix",
