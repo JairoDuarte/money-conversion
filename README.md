@@ -12,7 +12,26 @@ Antes de usar o conversor de moedas você precisa obter uma chave de autentifica
 ## Idioma
 English, Frençais, Português
 ## Utilização
-
+➜  ~ conversor-moedas 
+Please choose an language:
+1 - English 
+2 - French 
+3 - Porguese 
+1
+************* Choose an option ******************
+1 - Converter 
+2 - Help 
+3 - Exit 
+1
+Please input value in format: From To Money => (USD EUR 1)
+USD MAD 100
+ 100 USD is  915.5500999999999 MAD
+************* Choose an option ******************
+1 - Converter 
+2 - Help 
+3 - Exit 
+3
+➜  $ 
 
 ### Setup
 
