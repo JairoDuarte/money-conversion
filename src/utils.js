@@ -4,7 +4,7 @@ var content = require('./language.json');
 function changelanguage (language = 'Eng') {
   content.Language = language;
   const output = JSON.stringify(content);
-  fs.writeFile("./src/language.json", output, 'utf8',function (err) { if (err) return console.log(err); });
+  fs.writeFile("./language.json", output, 'utf8',function (err) { if (err) return console.log(err); });
 }
 
 function getconfig() {
