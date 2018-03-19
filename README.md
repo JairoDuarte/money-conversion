@@ -9,7 +9,8 @@
 
 Antes de usar o conversor de moedas você precisa obter uma chave de autentificação da API currencylayer, pode ser obtida no endereço  [https://currencylayer.com/product](https://currencylayer.com/product), em seguida inserir no ficheiro lib/index.js . 
 ---
-
+## Idioma
+English, Frençais, Português
 ## Utilização
 
 

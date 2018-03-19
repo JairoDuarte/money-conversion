@@ -20,12 +20,12 @@
     "Eng": {
         "name": "English ",
         "choice2": "Help ",
-        "form2":"Please input value in format: From To Money => (USD EUR 1)",
-        "form1": "************* Choice one option ******************",
+        "form2": "Please input value in format: From To Money => (USD EUR 1)",
+        "form1": "************* Choose an option ******************",
         "choice3": "Exit ",
         "is": "is ",
         "choice1": "Converter "
     },
-    "Language": "Pt",
-    "config": true
+    "Language": "Fr",
+    "config": false
 }

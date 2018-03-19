@@ -1,6 +1,6 @@
 {
   "name": "conversor-moedas",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Conversor de moedas para terminal(shell) com nodejs",
   "main": "src/app.js",
   "bin": {

@@ -5,9 +5,7 @@ const {language} = require('./utils')
 const colors = require('colors/safe');
 const Console = console;
 
-const print = function (params, params1) {
-  Console.log(colors.blue(' %s') + colors.magenta(' is %s'), params, params1);
-}
+
 function init() {
   if (!language.getconfig()) {
     language.init(colors);
@@ -29,6 +27,9 @@ function init() {
 }
 init();
 const language_ = language.getlanguage();
+const print = function (params, params1) {
+  Console.log(colors.white(` ${params}`) + colors.white(` ${language_.is} ${params1}`));
+}
 
 async function menu() {
   var cx;
@@ -40,7 +41,7 @@ async function menu() {
   cx = scanf('%d');
   switch (cx) {
     case 1:{
-      console.log(colors.blue(language_.form2));
+      console.log(colors.yellow(language_.form2));
       var t = scanf('%s %s %s');
       var from = t[0];
       var to = t[1];
