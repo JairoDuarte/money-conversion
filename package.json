@@ -1,15 +1,15 @@
 {
-  "name": "conversor-moedas",
-  "version": "1.1.3",
-  "description": "Conversor de moedas para terminal(shell) com nodejs",
+  "name": "money-converter",
+  "version": "0.0.1",
+  "description": "money converter via terminal",
   "main": "src/app.js",
   "bin": {
-    "conversor-moedas": "src/app.js"
+    "money-converter": "src/app.js"
   },
   "preferGlobal": true,
   "scripts": {
     "send": "npm publish --access=public",
-    "start": "nodemon ./src/app.js",
+    "start": "node ./src/app.js",
     "lint": "eslint '**/*.js'",
     "lint:fix": "eslint '**/*.js' --fix",
     "test": "node test/test.js",
@@ -36,11 +36,9 @@
   "dependencies": {
     "colors": "^1.1.2",
     "currency-conversion": "0.2.4",
+    "figlet": "^1.2.1",
+    "inquirer": "^6.2.0",
     "nodejs-scanf": "1.1.0",
     "scanf": "^1.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/JairoDuarte/CurrencyConversion.git"
   }
 }
