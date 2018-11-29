@@ -12,8 +12,7 @@
     "start": "node ./src/app.js",
     "lint": "eslint '**/*.js'",
     "lint:fix": "eslint '**/*.js' --fix",
-    "test": "node test/test.js",
-    "test:interface": "node test/interface.js"
+    "test": "jest src/"
   },
   "keywords": [
     "currency",
@@ -29,6 +28,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
+    "jest": "^23.6.0",
     "mocha": "^3.5.3",
     "mockery": "^2.1.0",
     "sinon": "^3.3.0"

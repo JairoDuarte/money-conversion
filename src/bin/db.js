@@ -1,16 +1,19 @@
-const fs = require('fs');
+'use strict';
+
+
+
+const fs =  require ('fs')
 var content = require('./src/bin/db.json');
+
 
 function changelanguage (language) {
   content.Language = language.name;
   content.config = language.status;
   const output = JSON.stringify(content);
-  fs.writeFile("./language.json", output, 'utf8',function (err) {
+  fs.writeFile("./src/bin/db.json", output, 'utf8',function (err) {
       if (err) return console.log(err); 
   }); 
 }
-
-
 
 function init(colors) {
   console.log(colors.green('Please choose an language:'));

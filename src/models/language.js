@@ -1,32 +1,36 @@
-class language{
+'use strict';
+
+class Language{
     constructor (content){
-        this.name = content.language;
-        this.status = content.config;
-        this.content = content;
+        this._name = content.name;
+        this._status = content.config;
+        this._content = content;
     }
     get name () {
-        return this.name;
+        return this._name;
     }
     get status () {
-        return this.status;
+        return this._status;
     }
     set name (name) {
-        this.name = name;
-        this.status = true;
+        this._name = _name;
+        this._status = true;
     }
     get content () {
-        let _content;
-        switch (this.name) {
+        let content;
+        switch (this._name) {
             case 'Pt':
-                _content = this.content.Pt;
+                content = this._content.Pt;
                 break;
             case 'Fr':
-                _content = this.content.Fr;
+                content = this._content.Fr;
                 break;
             default:
-                _content = this.content.Eng;
+                content = this._content.Eng;
                 break;
         }
-        return _content;
+        return content;
     }
 }
+
+module.exports = Language

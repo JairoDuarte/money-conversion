@@ -21,4 +21,3 @@ scanf('%s %s %f', function(from, to,value) {
         app().result(from,to,value,print);
 	}
 });
-    
