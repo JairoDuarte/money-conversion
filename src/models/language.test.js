@@ -2,7 +2,7 @@
 'use strict';
 
 const Language = require('./language')
-let content = {name:'Eng',content: '',config: true};
+let content = {language:'Eng',content: '',config: true,Eng:''};
 
 describe('Language Class', () => {
   let language = new Language(content);
