@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const scanf = require('scanf');
-const {app} = require('./index');
+const {app} = require('./converter');
 const {language} = require('./utils')
 const colors = require('colors/safe');
 const Console = console;
