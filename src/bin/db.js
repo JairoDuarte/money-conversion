@@ -7,7 +7,7 @@ class Database {
   
   static savelanguage (language) {
     content.language = language.name;
-    content.config = language.status;
+    content.status = language.status;
     const output = JSON.stringify(content);
     fs.writeFile("./src/bin/db.json", output, 'utf8', (err) => {
         if (err) return console.log(err); 

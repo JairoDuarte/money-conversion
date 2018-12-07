@@ -28,17 +28,16 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
-    "jest": "^23.6.0",
-    "mocha": "^3.5.3",
-    "mockery": "^2.1.0",
-    "sinon": "^3.3.0"
+    "jest": "^23.6.0"
   },
   "dependencies": {
     "colors": "^1.1.2",
     "currency-conversion": "0.2.4",
     "figlet": "^1.2.1",
     "inquirer": "^6.2.0",
+    "inquirer-autocomplete-prompt": "^1.0.1",
     "nodejs-scanf": "1.1.0",
+    "ora": "^3.0.0",
     "scanf": "^1.0.0"
   }
 }

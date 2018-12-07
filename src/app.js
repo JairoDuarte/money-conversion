@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 'use strict';
-
-let {scanf} = require('nodejs-scanf');
-let app = require('./lib/index');
-let colors = require('colors/safe');
+const program = require('commander')
+const inquirer = require('inquirer')
+const ora = require('ora')
+const figlet = require('figlet')
+const {scanf} = require('nodejs-scanf');
+const colors = require('colors/safe');
 
 console.log(colors.green('Please input value in format: from to money'));
 console.log(colors.italic.red('Ex: USD EUR 100'));
