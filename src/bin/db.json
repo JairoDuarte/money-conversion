@@ -2,8 +2,11 @@
     "Pt": {
         "name": "Português ",
         "choice2": "Ajuda ",
-        "form1": "************* Escolha uma opção no menu ******************",
-        "form2": "Por favor ensira o valor no formato: Origem Destinação Valor => (USD EUR 1)",
+        "form1": " Escolha uma opção no menu ",
+        "form2": "Quiter ",
+        "form3": "Quiter ",
+        "form4": "Please type currency to name, then choose it ",
+        "form5": "Por favor ensira o valor no formato: Origem Destinação Valor => (USD EUR 1)",
         "choice3": "Sair ",
         "is": "é ",
         "choice1": "Converter "
@@ -11,8 +14,11 @@
     "Fr": {
         "name": "French ",
         "choice2": "Aide ",
-        "form1": "************* Choisissez une option ******************",
-        "form2": "Svp saisiez la valuer dans le format: Source Destination Valeur => (USD EUR 1)",
+        "form1": " Choisissez une option ",
+        "form2": "Quiter ",
+        "form3": "Quiter ",
+        "form4": "Please type currency to name, then choose it ",
+        "form5": "Svp saisiez la valuer dans le format: Source Destination Valeur => (USD EUR 1)",
         "choice3": "Quiter ",
         "is": "est ",
         "choice1": "Convertir "
@@ -20,12 +26,15 @@
     "Eng": {
         "name": "English ",
         "choice2": "Help ",
-        "form2": "Please input value in format: From To Money => (USD EUR 1)",
-        "form1": "************* Choose an option ******************",
+        "form2": "Please type currency from name, then choose it ",
+        "form3": "Please type currency to name, then choose it ",
+        "form4": "Please type the value ",
+        "form5": "Please input value in format: From To Money => (USD EUR 1)",
+        "form1": " Choose an option ",
         "choice3": "Exit ",
         "is": "is ",
         "choice1": "Converter "
     },
     "status": true,
-    "language": "Fr"
+    "language": "Eng"
 }

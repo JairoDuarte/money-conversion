@@ -11,7 +11,7 @@ class Converter{
   static async help () {
     try {
       var result = await api.list(liveQuery);
-    } catch (error) {
+    } catch (error) { 
       Console.log(error);
     }
     return result.currencies;
