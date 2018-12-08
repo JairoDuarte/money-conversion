@@ -9,6 +9,24 @@ const Language = require('../models/language');
 const DataBase = require('../bin/db');
 const Console = console;
 
+const initialQuestion = () => {
+  let series = []
+  return inquirer.prompt([
+    {
+      type: 'autocomplete',
+      name: 'chosen',
+      message: 'Type serie name, then choose it',
+      source: async function(answersSoFar, input) {
+        series = await fetchSeries(input)
+        return series.map(serie => serie.label)
+      },
+      filter: function(answer) {
+        return series.find(serie => serie.label === answer)
+      },
+    },
+  ])
+}
+
 const initialLanguage = async () => {
   let content = DataBase.content();
   if (!content.status) {
@@ -18,11 +36,22 @@ const initialLanguage = async () => {
     listOflanguage.push(new Language({name:'Portuguese',language:'Pt'}));
     let language = (await Language.languagePrompt(listOflanguage)).language;
     language.status = true;
-    console.log(language);
-    console.log('name '+language.name);
-    console.log('langue '+language.content);
     DataBase.savelanguage(language);
   }
+}
+let menuPrompt = (listOfchoose,message) => {
+  const question = {
+    choices: [],
+    message: message,
+    name: 'choose',
+    type: 'list',
+    filter: function(answer) {
+      return listOfchoose.find(language => language.content === answer)
+    },
+  }
+  question.choices = listOfchoose.map(language => language.content)
+
+  return inquirer.prompt(question)
 }
 
 let init = async () => {
@@ -32,8 +61,26 @@ let init = async () => {
     'autocomplete',
     require('inquirer-autocomplete-prompt')
   )
-  initialLanguage();
+  await initialLanguage();
   const language = new Language(DataBase.content());
+  let  choose;
+  do {
+    //spinner.start(language.content.form1);
+    let listOflanguage = [];
+    listOflanguage.push(new Language({name:'English',language:'Eng'}));
+    listOflanguage.push(new Language({name:'French',language:'Fr'}));
+    listOflanguage.push(new Language({name:'Portuguese',language:'Pt'}));
+    choose = (await menuPrompt([{content:language.content.choice1,value:1},{content:language.content.choice2,value:2},{content:language.content.choice3,value:3}],language.content.form1)).choose;
+    switch (choose.value) {
+      case 1:
+        console.log(choose);
+        break;
+      case 2:
+        break;
+      case 3:
+        return false;
+    }
+  } while (true);
 }
 
 init();

@@ -15,7 +15,7 @@
         "form2": "Svp saisiez la valuer dans le format: Source Destination Valeur => (USD EUR 1)",
         "choice3": "Quiter ",
         "is": "est ",
-        "choice1": "Converter "
+        "choice1": "Convertir "
     },
     "Eng": {
         "name": "English ",
@@ -26,6 +26,6 @@
         "is": "is ",
         "choice1": "Converter "
     },
-    "status": false,
-    "language": "Pt"
+    "status": true,
+    "language": "Fr"
 }
