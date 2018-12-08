@@ -3,17 +3,19 @@
 const inquirer = require('inquirer')
 const ora = require('ora')
 const figlet = require('figlet')
+const currencies = require('./services/outils');
+const converter = require('./services/converter');
+const {menuPrompt, initialLanguage, initialQuestion, questionValue} = require('./services/interface');
 
 let init = async () => {
-    const spinner = ora()
-    console.log(figlet.textSync('MONEY - CONVERTER'))
-    inquirer.registerPrompt('autocomplete',require('inquirer-autocomplete-prompt'))
+    const spinner = ora();
+    console.log(figlet.textSync('MONEY - CONVERTER'));
+    inquirer.registerPrompt('autocomplete',require('inquirer-autocomplete-prompt'));
   
-    await initialLanguage();
-    const language = new Language(DataBase.content());
+    const language = await initialLanguage();
+    
     let  choose,from,value,to,result;
     do {
-      //spinner.start(language.content.form1);
       choose = (await menuPrompt([{content:language.content.choice1,value:1},{content:language.content.choice2,value:2},{content:language.content.choice3,value:3}],language.content.form1)).choose;
       switch (choose.value) {
         case 1:
