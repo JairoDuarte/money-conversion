@@ -1,6 +1,6 @@
 {
   "name": "money-converter",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "money converter via terminal",
   "main": "src/app.js",
   "bin": {
