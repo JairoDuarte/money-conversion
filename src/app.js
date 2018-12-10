@@ -9,7 +9,7 @@ const {menuPrompt, initialLanguage, initialQuestion, questionValue} = require('.
 
 let init = async () => {
   const spinner = ora();
-	console.log(figlet.textSync('MONEY - CONVERTER'));
+	console.log(figlet.textSync('MONEY - CONVERSION'));
 	inquirer.registerPrompt('autocomplete',require('inquirer-autocomplete-prompt'));
   
 	const language = await initialLanguage();
