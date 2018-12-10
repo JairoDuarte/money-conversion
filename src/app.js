@@ -8,8 +8,8 @@ const converter = require('./services/converter');
 const {menuPrompt, initialLanguage, initialQuestion, questionValue} = require('./services/interface');
 
 let init = async () => {
-	const spinner = ora();
-	console.log(figlet.textSync('MONEY - CONVERTER'));
+  const spinner = ora();
+	console.log(figlet.textSync('MONEY - CONVERSION'));
 	inquirer.registerPrompt('autocomplete',require('inquirer-autocomplete-prompt'));
   
 	const language = await initialLanguage();
