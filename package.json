@@ -27,15 +27,12 @@
     "jest": "^23.6.0"
   },
   "dependencies": {
-    "colors": "^1.1.2",
     "currency-conversion": "0.2.4",
     "eslint-plugin-jest": "^22.1.2",
     "figlet": "^1.2.1",
     "inquirer": "^6.2.0",
     "inquirer-autocomplete-prompt": "^1.0.1",
-    "nodejs-scanf": "1.1.0",
     "ora": "^3.0.0",
-    "save-dev": "^2.0.0",
     "scanf": "^1.0.0"
   }
 }
