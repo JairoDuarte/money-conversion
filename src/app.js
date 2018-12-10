@@ -1,62 +1,38 @@
 #!/usr/bin/env node
-const scanf = require('scanf');
-const {app} = require('./index');
-const {language} = require('./utils')
-const colors = require('colors/safe');
-const Console = console;
+'use strict';
+const inquirer = require('inquirer');
+const ora = require('ora');
+const figlet = require('figlet');
+const currencies = require('./services/outils');
+const converter = require('./services/converter');
+const {menuPrompt, initialLanguage, initialQuestion, questionValue} = require('./services/interface');
 
-
-function init() {
-  if (!language.getconfig()) {
-    language.init(colors);
-    var choice = scanf('%d');
-    switch (choice) {
-      case 1:
-        language.conflanguage('Eng');
-        break;
-      case 2:
-        language.conflanguage('Fr');
-        break;
-      case 3:
-        language.conflanguage('Pt');
-        break;
-      default:
-        language.changelanguage('Eng');
-    }
-  }
-}
+let init = async () => {
+  const spinner = ora();
+	console.log(figlet.textSync('MONEY - CONVERTER'));
+	inquirer.registerPrompt('autocomplete',require('inquirer-autocomplete-prompt'));
+  
+	const language = await initialLanguage();
+    
+	let  choose,from,value,to,result;
+	do {
+		choose = (await menuPrompt([{content:language.content.choice1,value:1},{content:language.content.choice2,value:2},{content:language.content.choice3,value:3}],language.content.form1)).choose;
+		switch (choose.value) {
+		case 1:
+			console.log(choose);
+			from = (await initialQuestion(currencies,language.content.form2)).converter;
+			to = (await initialQuestion(currencies,language.content.form3)).converter;
+			value = (await questionValue(language.content.form4)).value;
+			spinner.start('Coverting...');
+			result = await converter.converter(from.code, to.code , value);
+			spinner.succeed(result + ' '+to.code);
+			break;
+		case 2:
+			break;
+		case 3:
+			return false;
+		}
+	} while (true);
+};
+  
 init();
-const language_ = language.getlanguage();
-const print = function (params, params1) {
-  Console.log(colors.white(` ${params}`) + colors.white(` ${language_.is} ${params1}`));
-}
-
-async function menu() {
-  var cx;
-  do{
-  console.log(colors.green(language_.form1));
-  console.log(colors.bold(`1 - ${language_.choice1}`));
-  console.log(colors.bold(`2 - ${language_.choice2}`));
-  console.log(colors.bold(`3 - ${language_.choice3}`));
-  cx = scanf('%d');
-  switch (cx) {
-    case 1:{
-      console.log(colors.yellow(language_.form2));
-      var t = scanf('%s %s %s');
-      var from = t[0];
-      var to = t[1];
-      var value = t[2];
-      if (from != '' && to != '' && value != '' )
-        await app.result(from.toUpperCase(),to.toUpperCase(),value,print);
-      break;
-    }
-    case 2:
-      await app.help();
-      break;
-    case 3:
-        return false;
-  }
-  }while (true);
-}
-menu();
-

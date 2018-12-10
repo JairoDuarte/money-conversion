@@ -1,0 +1,23 @@
+dist: precise
+language: node_js
+node_js: 8
+before_script:
+- npm install
+scripts:
+- npm test
+- npm lint
+deploy:
+  provider: npm
+  email: $YOUR_EMAIL_ADDRESS
+  api_key: $AUTH_TOKEN
+  on:
+    branch: master
+notifications:
+  slack:
+    rooms:
+      - $SLACK_ROOM
+    on_success: always
+    on_failure: always
+    template:
+      - "%{repository_slug} (%{commit}) : %{message} %{foo} "
+      - "Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) of %{repository_slug}@%{branch} in PR <%{pull_request_url}|#%{pull_request_number}> by %{author} %{result} in %{duration}"
