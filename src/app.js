@@ -19,7 +19,6 @@ let init = async () => {
 		choose = (await menuPrompt([{content:language.content.choice1,value:1},{content:language.content.choice2,value:2},{content:language.content.choice3,value:3}],language.content.form1)).choose;
 		switch (choose.value) {
 		case 1:
-			console.log(choose);
 			from = (await initialQuestion(currencies,language.content.form2)).converter;
 			to = (await initialQuestion(currencies,language.content.form3)).converter;
 			value = (await questionValue(language.content.form4)).value;
