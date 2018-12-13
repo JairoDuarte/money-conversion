@@ -2,7 +2,7 @@
 > Convert money, rates directly from your Terminal!
 
 <p align="center">
-  <img src="./logo.png" height="64" alt="Logo">
+  <img src="https://i.imgur.com/ddhPSQ4.png" height="64" alt="Logo">
   <br>
   You can use money-conversion in English, French and Portuguese
   <p align="center">
@@ -17,7 +17,7 @@
 Corvert money may be a easy task, but it can be better. We are used to access our favorite exchange website or google, fill fields, click on buttons, etc... But wait! Look below how easy it can be:
 
 <p align="center">
-  <img src="https://media.giphy.com/media/3o6vXKXVYC1kx6pWO4/giphy.gif" alt="Animated Gif">
+  <img src="httpqs://media.giphy.com/media/3o6vXKXVYC1kx6pWO4/giphy.gif" alt="Animated Gif">
 </p>
 
 
