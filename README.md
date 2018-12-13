@@ -18,7 +18,7 @@
 Corvert money may be a easy task, but it can be better. We are used to access our favorite exchange website or google, fill fields, click on buttons, etc... But wait! Look below how easy it can be:
 
 <p align="center">
-  <img src="https://github.com/JairoDuarte/money-conversion/blob/master/demo.svg" alt="Animated Gif">
+  <img src="https://rawcdn.githack.com/JairoDuarte/money-conversion/9ce5b1e94920ceea26f34f9133ce7d847e9c0b0f/demo.svg" alt="Animated Gif">
 </p>
 
 
