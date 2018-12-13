@@ -2,7 +2,8 @@
 /* eslint-disable global-require */
 const API = require('currency-conversion');
 // api key for https://currencylayer.com/
-const api = new API({ access_key: ['1d36e5db73566dda4cf57cb2af474e19']});
+const access_key = process.env.CURRENCYLAYER_ACESS_KEY || '1d36e5db73566dda4cf57cb2af474e19'
+const api = new API({ access_key: [access_key]});
 /* eslint-enable global-require */
 const Console = console;
 const liveQuery = { source: 'USD',currencies: []};
