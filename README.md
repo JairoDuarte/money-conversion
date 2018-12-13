@@ -13,11 +13,12 @@
   </p>
 </p>
 
+
 ## Motivation
 Corvert money may be a easy task, but it can be better. We are used to access our favorite exchange website or google, fill fields, click on buttons, etc... But wait! Look below how easy it can be:
 
 <p align="center">
-  <img src="httpqs://media.giphy.com/media/3o6vXKXVYC1kx6pWO4/giphy.gif" alt="Animated Gif">
+  <img src="./demo.svg" alt="Animated Gif">
 </p>
 
 
