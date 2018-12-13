@@ -42,6 +42,7 @@
     "jest": "^23.6.0"
   },
   "dependencies": {
+    "chalk": "^2.4.1",
     "currency-conversion": "0.2.4",
     "figlet": "^1.2.1",
     "inquirer": "^6.2.0",
