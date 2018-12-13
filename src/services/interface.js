@@ -1,8 +1,23 @@
 #!/usr/bin/env node
 'use strict';
 const inquirer = require('inquirer');
+const chalk = require('chalk');
 const Language = require('../models/language');
 const DataBase = require('../bin/db');
+
+const accessKey = () => {
+	if (process.env.CURRENCYLAYER_ACESS_KEY == undefined) {
+		if (DataBase.api_key()) {
+			console.log(chalk.yellow('Please set Environment variable $CURRENCYLAYER_ACESS_KEY. get your access key here https://currencylayer.com/'));
+			console.log(chalk.yellow(`You can use the module ${10-DataBase.content().cont_api_key} time without Environment variable $CURRENCYLAYER_ACESS_KEY`));
+			return true;
+		}
+		else {
+			console.log(chalk.red('Environment variable $CURRENCYLAYER_ACESS_KEY is not set. see more https://github.com/JairoDuarte/money-conversion/blob/master/README.md'));
+			process.exit(0);
+		}
+	}
+}
 
 const initialQuestion = (listOfelements,message) => {
 	let list;
@@ -30,6 +45,7 @@ const questionValue = (message)=>{
 };
 
 const initialLanguage = async () => {
+	accessKey()
 	let content = DataBase.content();
 	if (!content.status) {
 		let listOflanguage = [];

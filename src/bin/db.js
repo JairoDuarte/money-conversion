@@ -32,7 +32,7 @@ class Database {
 	// return true if user number conversion without access key <=10 or false
 	static api_key(){
 		let value = content.cont_api_key;
-		if (value >10 ) {
+		if (value >9 ) {
 			return false;
 		} else {
 			value++;
