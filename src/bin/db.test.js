@@ -19,4 +19,8 @@ describe('Database Classe', () =>{
 		language = new Language(Database.content());
 		expect(language.content.name).toBe('English ');
 	});
+	test('get status of conversion without access key ', () =>{
+		language = new Language(Database.content());
+		expect(Database.api_key()).toBe(true);
+	});
 });

@@ -18,21 +18,35 @@
     "currency",
     "money",
     "conversão",
-    "divisas"
+    "divisas",
+    "dinheiro",
+    "currency",
+    "exchange",
+    "rates",
+    "convert",
+    "fixer",
+    "currencylayer",
+    "money",
+    "$$$",
+    "currencies"
   ],
-  "author": "Jairo Duarte <alfredojairo17@hotmail.com> (https://jairoduarte.github.io/resume/index.html) ",
+  "author": {
+    "name": "Jairo Duarte",
+    "email": "alfredojairo17@hotmail.com",
+    "url": "https://jairoduarte.github.io/resume/index.html"
+  },
   "license": "MIT",
   "devDependencies": {
     "eslint": "^5.10.0",
+    "eslint-plugin-jest": "^22.1.2",
     "jest": "^23.6.0"
   },
   "dependencies": {
+    "chalk": "^2.4.1",
     "currency-conversion": "0.2.4",
-    "eslint-plugin-jest": "^22.1.2",
     "figlet": "^1.2.1",
     "inquirer": "^6.2.0",
     "inquirer-autocomplete-prompt": "^1.0.1",
-    "ora": "^3.0.0",
-    "scanf": "^1.0.0"
+    "ora": "^3.0.0"
   }
 }
